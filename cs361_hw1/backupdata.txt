@@ -1,0 +1,61 @@
+//***************merge sort using vectors*******************
+//void merge(vector<int> &A, int p, int q, int r){
+//    int n1 = q - p + 1;
+//    int n2 =  r - q;
+//  //  int* L = new int[n1 + 1];
+//   // int* R = new int[n2 + 1];
+//    vector<int> L(n1 + 1);
+//    vector<int> R(n2 + 1);
+//    for (int i = 1; i <= n1; i++)
+//        L.at(i) = A.at(p + i - 1);
+//    for(int j = 1; j <= n2; j++)
+//        R.at(j) = A.at(q+j);
+//    //infinites
+//  int i = 1;
+//  int j = 1;
+//    for(int k = p; k <= r; k++){
+//        if(L.size() - 1< i ){
+//            A.at(k) = R.at(j);
+//            j++;
+//        }
+//        else if(R.size() - 1< j ){
+//            A.at(k) = L.at(i);
+//            i++;
+//        }
+//       else  if(L.at(i) <= R.at(j)){
+//            A.at(k) = L.at(i);
+//            i = i + 1;
+//        }
+//        else{
+//            A.at(k) = R.at(j) ;
+//            j = j + 1;
+//        }
+//    }
+//}
+//void mergeSort(vector<int> &array, int p, int r){
+//    if(p < r){
+//        int q = (int)(floor((p+r)/2));
+//        //array breaking here
+//        mergeSort(array, p, q);
+//        mergeSort(array,q+1, r);
+//        merge(array, p, q , r);
+//    }
+//}
+
+//*******************merge sort with vector test data in main
+//delete later##
+//    vector<int> test2(6);
+//    test2.at(0) = 4;
+//    test2.at(1) = 5;
+//    test2.at(2) = 1;
+//    test2.at(3) = 23;
+//    test2.at(4) = 10;
+//    test2.at(5) = 30;
+//    int size2 = 4;
+//    //mergeSort(test2, 1, size2);
+//    for(int i = 1; i <= size2; i++){
+//        cout << test2.at(i) << " ";
+//    }
+//    cout << endl;
+//    vector<int> test3;
+//    cout << test3.max_size() << "\n";
